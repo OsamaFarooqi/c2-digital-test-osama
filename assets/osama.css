@@ -1,0 +1,38 @@
+.osama-container {
+    display: flex;
+}
+.osama-container .left-side,
+.osama-container .right-side {
+    /* width: 50%;
+    max-width: 50%;
+    grid-template-columns: auto auto; */
+}
+
+.osama-container .img-dot {
+    position: absolute;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: -8px 0 0 -8px;
+    background: #ffffff;
+    border-radius: 100%;
+    box-shadow: 0 1px 10px rgba(50, 50, 50, 0.25);
+    cursor: pointer;
+    z-index: 1;
+    transform: scale(1);
+    transition: transform 0.25s ease-in-out;
+}
+
+.osama-container .img-dot.active{
+    transform: scale(2);
+}
+.osama-container .img-dot:hover{
+    transform: scale(2);
+    box-shadow: 2px 4px 20px rgba(50, 50, 50, 0.25);
+    
+}
+
+.osama-container .slider.slider--desktop .scroll-trigger.animate--slide-in{
+    width: 100%;
+    max-width: 100%;
+}
